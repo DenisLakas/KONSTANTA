@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONSTANTA</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">KONSTANTA</div>
+
+    <div class="nav-right">
+        <div class="nav-links">
+            <a href="#home">Головна</a>
+            <a href="#jobs">Вакансії</a>
+            <a href="#reviews">Відгуки</a>
+            <a href="#contact">Контакти</a>
+        </div>
+
+        <button id="applyBtn" class="apply-btn">Заявка</button>
+        <button id="adminBtn" class="admin-btn">ADMIN</button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header id="home">
+    <div class="hero">
+        <h1>KONSTANTA</h1>
+        <p>Сучасне кадрове агентство для роботи в Європі</p>
+        <a href="#jobs" class="btn">Переглянути вакансії</a>
+    </div>
+</header>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="card"><h2>16+</h2><p>років на ринку</p></div>
+    <div class="card"><h2>70+</h2><p>клієнтів</p></div>
+    <div class="card"><h2>1850+</h2><p>працівників</p></div>
+</section>
+
+<!-- JOBS -->
+<section id="jobs" class="jobs">
+    <h2 class="jobs-title">Активні вакансії</h2>
+
+    <div class="job-list">
+
+        <div class="job">
+            <img src="images/job1.jpg">
+            <div class="job-content">
+                <h3>Водій</h3>
+                <p>Польща</p>
+                <p class="salary">4500–6000 zl</p>
+            </div>
+        </div>
+
+        <div class="job">
+            <img src="images/job2.jpg">
+            <div class="job-content">
+                <h3>Склад</h3>
+                <p>Варшава</p>
+                <p class="salary">5000–7200 zl</p>
+            </div>
+        </div>
+
+        <div class="job">
+            <img src="images/job3.jpg">
+            <div class="job-content">
+                <h3>Прибиральник</h3>
+                <p>Краків</p>
+                <p class="salary">4200–5500 zl</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="jobs">
+    <h2 class="jobs-title">Відгуки</h2>
+
+    <div class="job-list">
+        <div class="job"><div class="job-content"><h3>Олена</h3><p>Все супер!</p></div></div>
+        <div class="job"><div class="job-content"><h3>Віктор</h3><p>Швидко знайшов роботу</p></div></div>
+        <div class="job"><div class="job-content"><h3>Юлія</h3><p>Рекомендую</p></div></div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="jobs">
+    <h2 class="jobs-title">Контакти</h2>
+
+    <div class="card contact-card">
+        <h2>+380 99 123 45 67</h2>
+        <p>konstanta@gmail.com</p>
+        <p>Україна • Польща</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h2>KONSTANTA</h2>
+    <p>© 2026 Кадрове агентство</p>
+</footer>
+
+<!-- MODAL: APPLY -->
+<div id="applyModal" class="modal">
+    <div class="modal-box">
+        <h2>Подати заявку</h2>
+
+        <input id="name" type="text" placeholder="Ім'я">
+        <input id="age" type="number" placeholder="Вік">
+        <input id="job" type="text" placeholder="Професія">
+
+        <button id="sendBtn">Відправити</button>
+        <button id="closeApply">Закрити</button>
+    </div>
+</div>
+
+<!-- MODAL: ADMIN -->
+<div id="adminModal" class="modal">
+    <div class="modal-box">
+
+        <div id="loginBox">
+            <h2>ADMIN</h2>
+            <input id="adminPassword" type="password" placeholder="Пароль">
+            <button id="loginBtn">Увійти</button>
+        </div>
+
+        <div id="adminPanel" style="display:none;">
+            <h2>Заявки</h2>
+            <div id="count"></div>
+            <div id="list"></div>
+        </div>
+
+        <button id="closeAdmin">Закрити</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
