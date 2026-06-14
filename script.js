@@ -16,6 +16,7 @@ const sendBtn = document.getElementById("sendBtn");
 
 const loginBtn = document.getElementById("loginBtn");
 const adminPassword = document.getElementById("adminPassword");
+const refreshAdmin = document.getElementById("refreshAdmin");
 
 const adminPanel = document.getElementById("adminPanel");
 const loginBox = document.getElementById("loginBox");
@@ -126,3 +127,6 @@ async function loadApplications() {
         alert("Помилка з'єднання");
     }
 }
+refreshAdmin.onclick = () => {
+    loadApplications();
+};
